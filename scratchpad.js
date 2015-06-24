@@ -10,6 +10,8 @@ $j(questions).children().each(function(){
   $j(this).find('.details td[valign=top] tr:contains("Selected Answer:")').remove();
   $j(this).find('.details td[valign=top] tr:contains("Answer Feedback:")').remove();
   $j(this).find('.details td[valign=top] tr:contains("Response Feedback:")').remove();
+  //$j(this).find('.details tr td[valign=top]:contains("Response Feedback:")').parent().remove()
+  //$j(this).find('.details td[valign=top] .quesTable').remove();
   $j(this).find('.details td[valign=top] li.matchingAnswers td[headers!=question]').remove();
   $j(this).find('.details td[valign=top] .reviewQuestionsAnswerDiv .answerTextSpan pre').text('free text entry');
   $j(this).find('.details td[valign=top] .reviewQuestionsAnswerDiv').each(function(i) {
